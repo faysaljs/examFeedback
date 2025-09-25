@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all .3s ease ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, gray, black);
+}
+header img{
+    width: 200px;
+    height: 130px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+nav ul a{
+    transition: all .3s ease ;
+    padding-bottom: 10px;
+    
+    text-decoration: none;
+    animation: color 5s ease 1s infinite;
+
+}
+
+
+@keyframes color {
+    0%{
+        color: rgb(28, 103, 242);
+    } 
+    10%{
+        color: rgb(28, 103, 242);
+    } 
+    50%{
+        color: green;
+    }   
+    100%{
+        color: rgb(164, 163, 163);
+    }
+
+}
+nav ul a:hover{
+    border-bottom: 3px solid rgb(28, 103, 242); 
+}
+
+section{
+    background: url(back.png);
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode:color-burn;
+    background-color: rgba(128, 128, 128, 0.7);
+    text-align: center;
+    
+}
+form input:focus{
+    outline: solid 2px green;
+}
+form input{
+    outline: none;
+    width: 100%;
+    margin: 0;
+    height: 35px;
+    border: 3px solid rgb(28, 103, 242);
+    border-radius: 5px;
+}
+form{
+    width: 100%;
+    text-align: centerq;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form textarea:focus{
+    outline: solid 2px green;
+}
+textarea{
+    outline: none;
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    border: 3px solid rgb(28, 103, 242);
+    border-radius: 5px;
+}
+form .content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    color: white;
+    background: rgba(41, 40, 40, 0.6);
+    width: 60%;
+    text-align: left;
+    padding: 40px;
+}
+
+.label{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.label i{
+    font-size: 25px;
+    animation: color 5s ease 1s infinite;
+    
+} 
+
+input[type="submit"],input[type="reset"] {
+    background-color:rgb(28, 103, 242);
+    color: white;
+    margin: 10px;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color: green ;
+    outline: none;
+    border: 3px solid green;
+    transform: scale(1.05);
+}
+
+h1{
+    animation: color 5s ease 1s infinite;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width:580px) {
+    header img{
+        width: 170px;
+        height: 100px;
+    }
+    header nav ul{
+        display: block;
+    }
+    nav ul a:hover{
+        border-bottom: none; 
+    }
+}
+
