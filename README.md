@@ -24,6 +24,10 @@ The feedback is stored in a MySQL database for later review.
 
 
 ---
+## 📂 Project Image 
+![Alt text](examBreak.png)
+
+---
 
 ## 📂 Project Structure
 
