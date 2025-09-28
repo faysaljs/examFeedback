@@ -25,7 +25,7 @@ The feedback is stored in a MySQL database for later review.
 
 ---
 ## 📸 Screenshots
-![Homepage Screenshot](examBreak .png)
+![Homepage Screenshot](examBreak.png)
 
 ---
 
